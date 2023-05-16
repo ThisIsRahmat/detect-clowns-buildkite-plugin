@@ -1,4 +1,10 @@
 steps:
+ 
+  - label: docker:compose
+     plugins:
+      - docker-compose#x.y.z:
+          run: tests
+
   - label: "🤡 :hammer:"
     plugins:
       - plugin-tester#v1.0.0: ~
